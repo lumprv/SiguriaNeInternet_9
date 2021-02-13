@@ -1,5 +1,12 @@
 # Sql Injection Gui
-Ketu kemi zhvillimin e  nje aplikacioni qe mundeson sql injection teste te automatizuara ne nje URL te caktuar
+Ketu kemi bere zhvillimin e nje GUI aplikacioni qe mundeson sql injection teste te automatizuara ne nje URL te caktuar. Gjuha programuese eshte Python ndersa eshte perdorur moduli Tkinter per krijimin e GUI
+
+# Instalimi
+Se pari clone repositoryn me ane te komandes git clone https://github.com/lumprv/SiguriaNeInternet_6
+Instaloj librarite e nevojshme si 'pip3 install requests bs4'
+
+# Ekzekutimi
+Aplikacioni ne Kali Linux ekzekutohet me ane te komandes: python3 sqlscanner.py 
 
 # 1.Dritarja kryesore 
 ![first](https://user-images.githubusercontent.com/58596989/107860800-c6131100-6e41-11eb-90e1-3b0f30c8dee6.png)
