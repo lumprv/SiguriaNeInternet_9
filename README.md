@@ -10,3 +10,7 @@ Ne kete dritare shenohet Url qe deshirojme te bejme test te automatizuar
 
 # 3.Testimi i nje URL-je
 ![y](https://user-images.githubusercontent.com/58596989/107861024-5a31a800-6e43-11eb-8e06-37f6c29330d8.png)
+
+# 4.Dritarja "Sql Info"
+Ketu kemi disa informata te thjeshta per sql injection
+![zahiiririr](https://user-images.githubusercontent.com/58596989/107861140-04a9cb00-6e44-11eb-9839-f4d0063e0369.png)
