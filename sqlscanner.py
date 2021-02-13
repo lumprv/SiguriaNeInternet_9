@@ -13,7 +13,7 @@ s.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 
 root = Tk()
 
-root.title("Automate SQL Injection test")
+root.title("SQL Injection")
 root.geometry("550x500+200+70")
 root.resizable(False, False)
 #image = ImageTk.PhotoImage(file="foto.jpg")
@@ -99,9 +99,9 @@ def scan_sql_injection():
             DBDict = {
                 "MySQL": ['MySQL', 'MySQL Query fail:', 'SQL syntax', 'You have an error in your SQL syntax',
                           'mssql_query()', 'mssql_num_rows()', 'warning: mysql'],
-                "PostGre": ['dafafdfds'],
-                "Microsoft_SQL": ['dafafdfds'],
-                "Oracle": ['dafafdfds'],
+                "PostGre": ['PostgreSQL.*?ERROR','valid PostgreSQL result','Npgsql\.', ,'PG::SyntaxError:', 'dafafdfds'],
+                "Microsoft_SQL": ['Driver.*? SQL[\-\_\ ]*Server','Warning.*?\W(mssql|sqlsrv)_','Microsoft SQL Native Client error "'[0-9a-fA-F]{8}"','\[SQL Server\]','dafafdfds'],
+                "Oracle": ['Oracle error','Warning.*?\W(oci|ora)_','SQL command not properly ended','dafafdfds'],
                 "Advantage_Database": ['dafafdfds'],
                 "Firebird": ['dafafdfds']
             }
