@@ -34,3 +34,7 @@ Nese url nuk eshte valide
 https://www.thepythoncode.com/code/sql-injection-vulnerability-detector-in-python
 
 https://stackoverflow.com/questions/30770213/no-schema-supplied-and-other-errors-with-using-requests-get/30770405
+
+https://www.reddit.com/r/Python/comments/5ii2vr/how_do_i_get_the_output_of_tkinter_to_print_into/
+
+https://github.com/sqlmapproject/sqlmap/blob/master/data/xml/errors.xml
