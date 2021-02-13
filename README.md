@@ -1,9 +1,10 @@
 # Sql Injection Gui
-Ketu kemi bere zhvillimin e nje GUI aplikacioni qe mundeson sql injection teste te automatizuara ne nje URL te caktuar. Gjuha programuese eshte Python ndersa eshte perdorur moduli Tkinter per krijimin e GUI
+Ketu kemi bere zhvillimin e nje GUI aplikacioni qe mundeson sql injection teste te automatizuara ne nje URL te caktuar. Gjuha programuese eshte Python3 ndersa eshte perdorur moduli Tkinter per krijimin e GUI
 
 # Instalimi
-Se pari clone repositoryn me ane te komandes git clone https://github.com/lumprv/SiguriaNeInternet_6
-Instaloj librarite e nevojshme si 'pip3 install requests bs4'
+Se pari clone repositoryn me ane te komandes *git clone https://github.com/lumprv/SiguriaNeInternet_6*
+
+Instaloni librarite e nevojshme si *'pip3 install requests bs4'*
 
 # Ekzekutimi
 Aplikacioni ne Kali Linux ekzekutohet me ane te komandes: python3 sqlscanner.py 
@@ -29,3 +30,7 @@ Ketu kemi disa informata te thjeshta per sql injection
 Nese url nuk eshte valide
 ![jjj](https://user-images.githubusercontent.com/58596989/107863383-4e9aad00-6e54-11eb-897c-9b39f672a1b8.png)
 
+# Referencat
+https://www.thepythoncode.com/code/sql-injection-vulnerability-detector-in-python
+
+https://stackoverflow.com/questions/30770213/no-schema-supplied-and-other-errors-with-using-requests-get/30770405
