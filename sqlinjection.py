@@ -91,3 +91,62 @@ def Main(test, get_database_type, dbname, tablenames):
         return DBType, DBname, tables, vulnerable
     else:
         return None, None, None, vulnerable
+
+if __name__ == '__main__':
+    
+    def scan_window():
+        global mainframe
+
+        def scan():
+            url = url_var.get()
+            response = Main(url, url, url, url, False, False, False)
+
+            db_type.set(response[0])
+            db_name.set(response[1])
+            db_table.set(response[2])
+            vulnerability.set(response[3])
+
+        homeframe.destroy()
+        mainframe = Frame(window, width=620, height=600, bg="#ffee38")
+        mainframe.place(x=181, y=0)
+
+        style = ttk.Style()
+        style.theme_use("clam")
+        style.configure("TButton", font=('Bahnschrift semiBold SemiCondensed', 18), background="#ffee58",
+                        foreground="navy", relief=RAISED)
+
+        url_var = StringVar()
+        db_type = StringVar()
+        db_table = StringVar()
+        db_name = StringVar()
+        vulnerability = StringVar()
+
+        ttk.Entry(mainframe, textvariable=url_var,
+                  font=("Bahnschrift semiLight SemiCondensed ", 14)).place(x=190, y=70, height=40, width=250)
+
+        Label(mainframe, text="URL :", font=("Bahnschift bold SemiCondensed ", 20), bg="#ffee38", fg="navy").place(
+            x=100, y=70)
+
+        Button(mainframe, text="SCAN", command=scan, bg="navy", fg="#ffee38", relief=GROOVE,
+               font=('Bahnschrift semiBold SemiCondensed', 18), width=15).place(x=230, y=120)
+
+        frame = PanedWindow(mainframe, width=490, height=340, relief=SUNKEN, bd=5, bg="navy").place(x=80, y=210)
+
+        Label(frame, text="Database's Type :", font=("Bahnschrift semibold SemiCondensed ", 21),
+              bg="navy", fg="#ffee38").place(x=280, y=230)
+        Label(frame, text="Database's Name :", font=("Bahnschrift semibold SemiCondensed ", 21),
+              bg="navy", fg="#ffee38").place(x=280, y=310)
+        Label(frame, text="Database's Tables :", font=("Bahnschrift semibold SemiCondensed ", 21),
+              bg="navy", fg="#ffee38").place(x=280, y=390)
+        Label(frame, text="Vulnebarity : ", font=("Bahnschrift semibold SemiCondensed ", 21),
+              bg="navy", fg="#ffee38").place(x=300, y=470)
+
+        Entry(mainframe, textvariable=db_type, state="readonly", font=("Bahnschrift semiLight SemiCondensed ", 17),
+              bd=4, width=19).place(x=340, y=230)
+        Entry(mainframe, textvariable=db_name, state="readonly", font=("Bahnschrift semiLight SemiCondensed ", 17),
+              bd=4, width=19).place(x=340, y=310)
+        Entry(mainframe, textvariable=db_table, state="readonly", font=("Bahnschrift semiLight SemiCondensed ", 17),
+              bd=4, width=19).place(x=340, y=390)
+        Entry(mainframe, textvariable=vulnerability, state="readonly",
+              font=("Bahnschrift semiLight SemiCondensed ", 17), bd=4, width=19).place(x=340, y=470)
+
