@@ -28,6 +28,8 @@ Ketu kemi disa informata te thjeshta per sql injection
 
 # 2.1 Testimi i nje URL-je
 ![jjj](https://user-images.githubusercontent.com/58596989/107863383-4e9aad00-6e54-11eb-897c-9b39f672a1b8.png)
+![aaaaa](https://user-images.githubusercontent.com/58596989/107863779-4a23c380-6e57-11eb-97ed-0a9051929a57.png)
+![hhhhhh](https://user-images.githubusercontent.com/58596989/107863780-4b54f080-6e57-11eb-8ef8-6eb35fad6d92.png)
 
 # Referencat
 https://www.thepythoncode.com/code/sql-injection-vulnerability-detector-in-python
