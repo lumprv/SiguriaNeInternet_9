@@ -19,5 +19,6 @@ Ketu kemi disa informata te thjeshta per sql injection
 ![d1](https://user-images.githubusercontent.com/58596989/107863301-92d97d80-6e53-11eb-9c62-e1f75a8425fd.png)
 
 # 2.1 Testimi i nje URL-je
-*Nese url nuk eshte valide 
+Nese url nuk eshte valide
 ![jjj](https://user-images.githubusercontent.com/58596989/107863383-4e9aad00-6e54-11eb-897c-9b39f672a1b8.png)
+
