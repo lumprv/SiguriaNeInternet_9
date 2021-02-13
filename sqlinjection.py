@@ -149,4 +149,56 @@ if __name__ == '__main__':
               bd=4, width=19).place(x=340, y=390)
         Entry(mainframe, textvariable=vulnerability, state="readonly",
               font=("Bahnschrift semiLight SemiCondensed ", 17), bd=4, width=19).place(x=340, y=470)
+        def sql_info_window():
+        try:
+            mainframe.destroy()
+        except NameError:
+            pass
+        finally:
+            homeframe.destroy()
+            info_frame = Frame(window, width=620, height=600, bg="#ffee38")
+            info_frame.place(x=181, y=0)
+
+            Label(info_frame, text="About SQL Injector", font=('Bahnschrift semiBold SemiCondensed', 32),
+                  bg="#ffee38").place(x=150, y=70)
+
+            info_pane = PanedWindow(info_frame, width=500, height=300, bg="navy", relief=SUNKEN, bd=3)
+            info_pane.place(x=50, y=200)
+
+            text = '''     SQL Injection (Structured Query Language injection).
+            Aplikacionet në internet bëjnë të mundur që vizitorët e ueb 
+            faqeve të paraqesin dhe të marrin të dhëna prej data bazës  
+            përmes internetit duke përdorur shfletuesit e tyre. 
+            Data bazat janë të rëndësishme për ueb faqet moderne, ato 
+            ruajnë te dhëna te ndryshme nga vizitoret, marrin informata
+            nga klientët,furnizuesit e shume persona tjerë.Sulmi SQL 
+            injection bëhet me insertimin e SQL query (pyetjeve) 
+            përmes futjes së të dhënave prej klientit në aplikacion.
+             Injektimi i suksesshëm i SQL mund të bëj të mundur leximin'''
+            Label(info_pane, text=text, font=('Bahnschrift semiBold SemiCondensed', 14), fg="#ffee38",
+                  bg="navy", ).place(x=-40, y=10)
+
+
+    window = Tk()
+    window.geometry("800x600")
+    window.config(bg="#ffee38")
+    window.title("SQL Injector")
+    window.resizable(0, 0)
+    style = ttk.Style()
+    style.theme_use("clam")
+    style.configure("TButton", font=('Bahnschrift semiBold SemiCondensed', 18), background="#ffee58", foreground="navy",
+                    relief=RAISED)
+
+    homeframe = Frame(window, width=620, height=600, bg="#ffee38")
+    homeframe.place(x=181, y=10)
+
+    Label(homeframe, text="Welcome to Sql Injector", font=('Bahnschrift semiBold SemiCondensed', 32),
+          bg="#ffee38").place(x=130, y=70)
+
+    left_pane = PanedWindow(window, width=180, height=600, relief=RAISED, bd=8, bg="navy").pack(side=LEFT, fill=Y)
+
+    ttk.Button(left_pane, text="SCAN URL", width=12, command=scan_window).place(x=4, y=100)
+    ttk.Button(left_pane, text="SQL INFO", width=12, command=sql_info_window).place(x=4, y=170)
+
+    window.mainloop()
 
